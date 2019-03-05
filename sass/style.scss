@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@import "mixins";
+@import "copiedColors";
+@import "layout";
+@import "dashboard";
+@import "navbar";
+@import "leftTopSideBar";
+@import "rightTopSideBar";
+@import "rightSecondSideBar";
+@import "taskBoard";
+@import "footer";
+@import "charts";
+
+
+body{
+    margin: 0 ;
+    padding: 0;
+    background-color: $bodyBlue;
+
+}
+header{
+    padding-left: 48px;
+}

@@ -1,0 +1,460 @@
+
+$leftTopColor: #1C2732;
+$leftBodyColor: #222F3C;
+$leftFontFamily: "Open Sans", sans-serif;
+$leftFontSize: 13px;
+$leftLineHeight: 20px;
+$leftFirstFontColor: #607188;
+$leftFontColor: #ffffff;
+$leftFontWeight: 400;
+$navbarBlue:#28BEBD; 
+$bodyBlue:#EEF5F9;   
+body{
+    // position: relative;
+}
+.taskBoard{
+    // position: relative;
+    background:#EEF5F9;
+    padding-left:58px;
+    // margin-bottom: 100px;
+    padding-top: 45px;
+    #taskboardUnderlay{
+        // position: absolute;
+        z-index: 1;
+        top: 0;
+        left:0;
+    }
+    #taskBoardOverlay{
+        // position: absolute;
+        top: 0;
+        z-index: 10;
+        background-color: #EEF5F9;
+    }
+
+
+    .cardHeader{
+        background: white;
+        height: 57px;
+        margin-top:6px;
+        border: #EEF5F9;
+    }    
+    .cardBody{
+        background: white;
+        margin-top:10px;
+        // margin-bottom:100px;
+        height: 107px;
+        border: #EEF5F9;
+    }
+    .cardFooter{
+        background: #F5F9FB;
+        height: 50px;
+    }
+    .addCard{
+        margin-top:20px;
+        height: 40px;
+    }
+    .addCardPLus{
+        padding-top:7px;
+        vertical-align: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #9DAEC4;
+        justify-content: center;
+        align-content: center;
+        color: white;
+        font-size:17px;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 100px;
+
+
+    }
+    .addCardPLus:hover{
+        transform: rotate(360deg);
+        transition:all .5s ease;
+    }
+    
+    .cardBorder1{
+        border-top:4px solid #FF5722;
+    }   
+    
+    .cardBorder2{
+        border-top:4px solid #2196F3;
+    } 
+    
+    .cardBorder3{
+        border-top:4px solid #4CAF50;
+    } 
+    
+    .cardBorder4{
+        border-top:4px solid orange;
+    }
+    h2{
+        font-size: 14px;
+        max-width: 75%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 30px;
+        margin: 0;
+    font-weight: 400;
+    color: #516073;
+    line-height: 23px;
+    padding-top: 4px;
+    }
+    .badge{
+        color: #fff!important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    // position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #ff5722!important;
+    }
+    .badge2{
+        color: #fff!important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #2196F3!important;
+    }
+    .badge3{
+        color: #fff!important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #4CAF50!important;
+    }
+
+    .cardBodyHeader{
+        font-size: 1.25em;
+    margin: 0;
+    font-weight: 400;
+    color: #516073;
+    line-height: 23px;
+    padding-top: 4px;
+    max-width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 13px!important;
+    }
+
+    .profileImages img{
+        position: relative;
+        // float: left;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        margin-left: -13px;
+        margin-top: 20px;
+        border: 2px solid #fff;
+        z-index: 0;
+    }
+    .profileImages img:hover{
+        width: 50px;
+        height: 50px;
+        transition: all .2s ease-in-out;
+        z-index: 1;
+    }
+    .cardNumber{
+        padding: 0 3px;
+        vertical-align: middle;
+        font-size: 13px;
+        // background-color: #eef5f9;
+        color: #607188;
+    }
+
+    .cardAttachments{
+    color: #607188;
+    
+    vertical-align: middle;
+    }
+    .attachNumber{
+        margin: auto auto;
+        vertical-align: middle;
+        font-size: 13px;
+        color: #607188;
+    }
+    .singleAttachment{
+        margin-top: 4px;
+    }
+    #newCardWindow input{
+        border: transparent;
+        background-color: transparent;
+        border-bottom: 1px solid gray;
+        padding-top: 50px;
+        outline-width: 0;
+    }
+    .lastInput{
+        border: transparent;
+        background-color: transparent;
+        border-bottom: 1px solid gray;
+        padding-top: 50px;
+        outline-width: 0;
+    }
+    .bottomBorder3{
+        border-bottom: 3px solid #ff5722;
+    }
+    .doneButton{
+        border-radius: 50%;
+        background-color: #EC407A;
+        border:none;
+        color: white;
+        width: 30px;
+        height: 30px;
+    }
+    .closeButton{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $leftFirstFontColor;
+        border:none;
+        color: white;
+    }
+    .newCardFooter{
+        background-color: #eef5f9;
+        color: #607188;
+        height: 50px;
+    }
+
+    span{
+        height: 40px;
+        width: 40px;
+        box-sizing: border-box;
+    }
+    #okCardBody{
+        height: 67px;
+    }
+    .fourthHead{
+        background-color: rgba(96,113,136,.5);
+    }
+    .labelForColors{
+        line-height: 1.07142857;
+        font-weight: 600;
+        margin: 3px 0 0;
+        font-size: 13px;
+    }
+    #lastCardBody{
+        background-color: white;
+        visibility: hidden;
+    }
+    #lastCardInput{
+        background-color: white;
+        visibility: hidden;
+    }
+
+    .swatches li{
+        border-radius: 50%;
+        list-style-type:none;
+        width: 30px;
+        height: 30px;
+        margin: 0 0 3px;
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        border: 2px solid;
+        margin-left: 5px;
+        box-sizing: border-box;
+    }
+    .swatches  li  input[type=radio] {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 2;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+
+    .swatches li input{
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color:transparent;
+        color: transparent;
+    }
+
+
+
+
+    #rightBoard{
+        // visibility: hidden;
+        font-family: "Open Sans",sans-serif;
+        color: #758396;
+
+        #taskBoardCardDetailsBody{
+            color: #758396;
+            // visibility: visible;
+            // display: none;
+    
+            .rightHeader{
+                background: white;
+            }
+            .cardDetailsBodyHeading{
+                background-color: white;
+                .calendar{
+                }
+                .calendarTime{
+                    background-color: #F5F9FB;
+                    font-size: 14px;
+                    height: 36px;
+                }
+            }
+            
+        }
+        .rightBody{
+            // visibility: hidden;
+        }
+    
+
+        .middleBody{
+            background-color: white;
+            color: #758396;
+            font-family: "Open Sans",sans-serif;
+            font-weight: 600;
+            line-height: 17px;
+            .cardText{
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 15px;
+            }
+            .cardSecondTitle{
+                display: inline-block;
+                font-weight: 200;
+                font-size: 16px;
+            }
+            .cardPlusButton{
+                width: 40px;
+                height: 40px;
+                border-style: dashed;
+                border-radius:50%;
+                
+            }
+            .dashedBorder{
+                border-bottom: .5px dashed;
+            }
+            .dashedBorder2{
+                border-bottom: dashed 1px;
+            }
+
+            
+            
+        }
+
+        .cardDetailsAttachments{
+            .heading{
+                height: 58px;
+            }
+            .middleBody{
+                background-color: white;
+            }
+            .cardDetailsAttachmentsImage{
+                width: 30px;
+                height: 30px;
+                color: white;
+                border-radius: 50%;
+                background-color: #FB4869;
+            }
+            .cardDetailsAttachmentFileType{
+                font-size: 13px;
+                font-weight: 200;
+            }
+            .cardFooter{
+                background-color: #fff;
+                position: relative;
+                .fileChooser{
+                    position: absolute;
+                    z-index: 1;
+                    opacity: 0;
+                }
+                .visibleForm{
+                    position: absolute;
+                    z-index: 0;
+                    text-decoration: none;
+                    outline: none;
+                    .visibileInput{
+                        border: none;
+                        outline-color: none;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+
+                }
+            }
+
+        }
+
+        .activityBody{
+            .uploadNow{
+                background-color: white;
+                i{
+                    font-size: 17px;
+                    color: #ffc107;
+                }
+            }
+            .activityFirstHeading{
+                font-weight: 600;
+            }
+            font-size: 13px;
+            .uploadTime{
+                font-size: 10px;
+                font-weight: 400;
+            }
+            ul li{
+                line-height: 10px;
+            }
+            .uploadPast{
+                i{
+                    font-size: 17px;
+                    color: $navbarBlue;
+                }
+            }
+        }
+
+    }
+
+    .bottomBorder{
+        border-bottom: 1px solid rgba(215,225,237,.8);
+    }
+
+}
+
+footer{
+    position: fixed;
+}
+    
+
+
+
+    

@@ -1,0 +1,321 @@
+.taskBoard {
+  background: #EEF5F9;
+  padding-left: 58px;
+  padding-top: 45px; }
+  .taskBoard #taskboardUnderlay {
+    z-index: 1;
+    top: 0;
+    left: 0; }
+  .taskBoard #taskBoardOverlay {
+    top: 0;
+    z-index: 10;
+    background-color: #EEF5F9; }
+  .taskBoard .cardHeader {
+    background: white;
+    height: 57px;
+    margin-top: 6px;
+    border: #EEF5F9; }
+  .taskBoard .cardBody {
+    background: white;
+    margin-top: 10px;
+    height: 107px;
+    border: #EEF5F9; }
+  .taskBoard .cardFooter {
+    background: #F5F9FB;
+    height: 50px; }
+  .taskBoard .addCard {
+    margin-top: 20px;
+    height: 40px; }
+  .taskBoard .addCardPLus {
+    padding-top: 7px;
+    vertical-align: center;
+    justify-content: center;
+    position: absolute;
+    background-color: #9DAEC4;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 17px;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 100px; }
+  .taskBoard .addCardPLus:hover {
+    transform: rotate(360deg);
+    transition: all .5s ease; }
+  .taskBoard .cardBorder1 {
+    border-top: 4px solid #FF5722; }
+  .taskBoard .cardBorder2 {
+    border-top: 4px solid #2196F3; }
+  .taskBoard .cardBorder3 {
+    border-top: 4px solid #4CAF50; }
+  .taskBoard .cardBorder4 {
+    border-top: 4px solid orange; }
+  .taskBoard h2 {
+    font-size: 14px;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 30px;
+    margin: 0;
+    font-weight: 400;
+    color: #516073;
+    line-height: 23px;
+    padding-top: 4px; }
+  .taskBoard .badge {
+    color: #fff !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #ff5722 !important; }
+  .taskBoard .badge2 {
+    color: #fff !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #2196F3 !important; }
+  .taskBoard .badge3 {
+    color: #fff !important;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    line-height: 15px;
+    position: absolute;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+    background-color: #777;
+    border-radius: 10px;
+    background-color: #4CAF50 !important; }
+  .taskBoard .cardBodyHeader {
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: 400;
+    color: #516073;
+    line-height: 23px;
+    padding-top: 4px;
+    max-width: 290px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 13px !important; }
+  .taskBoard .profileImages img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: -13px;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    z-index: 0; }
+  .taskBoard .profileImages img:hover {
+    width: 50px;
+    height: 50px;
+    transition: all .2s ease-in-out;
+    z-index: 1; }
+  .taskBoard .cardNumber {
+    padding: 0 3px;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #607188; }
+  .taskBoard .cardAttachments {
+    color: #607188;
+    vertical-align: middle; }
+  .taskBoard .attachNumber {
+    margin: auto auto;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #607188; }
+  .taskBoard .singleAttachment {
+    margin-top: 4px; }
+  .taskBoard #newCardWindow input {
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    padding-top: 50px;
+    outline-width: 0; }
+  .taskBoard .lastInput {
+    border: transparent;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    padding-top: 50px;
+    outline-width: 0; }
+  .taskBoard .bottomBorder3 {
+    border-bottom: 3px solid #ff5722; }
+  .taskBoard .doneButton {
+    border-radius: 50%;
+    background-color: #EC407A;
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px; }
+  .taskBoard .closeButton {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #607188;
+    border: none;
+    color: white; }
+  .taskBoard .newCardFooter {
+    background-color: #eef5f9;
+    color: #607188;
+    height: 50px; }
+  .taskBoard span {
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box; }
+  .taskBoard #okCardBody {
+    height: 67px; }
+  .taskBoard .fourthHead {
+    background-color: rgba(96, 113, 136, 0.5); }
+  .taskBoard .labelForColors {
+    line-height: 1.07142857;
+    font-weight: 600;
+    margin: 3px 0 0;
+    font-size: 13px; }
+  .taskBoard #lastCardBody {
+    background-color: white;
+    visibility: hidden; }
+  .taskBoard #lastCardInput {
+    background-color: white;
+    visibility: hidden; }
+  .taskBoard .swatches li {
+    border-radius: 50%;
+    list-style-type: none;
+    width: 30px;
+    height: 30px;
+    margin: 0 0 3px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid;
+    margin-left: 5px;
+    box-sizing: border-box; }
+  .taskBoard .swatches li input[type=radio] {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0); }
+  .taskBoard .swatches li input {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: transparent;
+    color: transparent; }
+  .taskBoard #rightBoard {
+    font-family: "Open Sans",sans-serif;
+    color: #758396; }
+    .taskBoard #rightBoard #taskBoardCardDetailsBody {
+      color: #758396; }
+      .taskBoard #rightBoard #taskBoardCardDetailsBody .rightHeader {
+        background: white; }
+      .taskBoard #rightBoard #taskBoardCardDetailsBody .cardDetailsBodyHeading {
+        background-color: white; }
+        .taskBoard #rightBoard #taskBoardCardDetailsBody .cardDetailsBodyHeading .calendarTime {
+          background-color: #F5F9FB;
+          font-size: 14px;
+          height: 36px; }
+    .taskBoard #rightBoard .middleBody {
+      background-color: white;
+      color: #758396;
+      font-family: "Open Sans",sans-serif;
+      font-weight: 600;
+      line-height: 17px; }
+      .taskBoard #rightBoard .middleBody .cardText {
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 15px; }
+      .taskBoard #rightBoard .middleBody .cardSecondTitle {
+        display: inline-block;
+        font-weight: 200;
+        font-size: 16px; }
+      .taskBoard #rightBoard .middleBody .cardPlusButton {
+        width: 40px;
+        height: 40px;
+        border-style: dashed;
+        border-radius: 50%; }
+      .taskBoard #rightBoard .middleBody .dashedBorder {
+        border-bottom: .5px dashed; }
+      .taskBoard #rightBoard .middleBody .dashedBorder2 {
+        border-bottom: dashed 1px; }
+    .taskBoard #rightBoard .cardDetailsAttachments .heading {
+      height: 58px; }
+    .taskBoard #rightBoard .cardDetailsAttachments .middleBody {
+      background-color: white; }
+    .taskBoard #rightBoard .cardDetailsAttachments .cardDetailsAttachmentsImage {
+      width: 30px;
+      height: 30px;
+      color: white;
+      border-radius: 50%;
+      background-color: #FB4869; }
+    .taskBoard #rightBoard .cardDetailsAttachments .cardDetailsAttachmentFileType {
+      font-size: 13px;
+      font-weight: 200; }
+    .taskBoard #rightBoard .cardDetailsAttachments .cardFooter {
+      background-color: #fff;
+      position: relative; }
+      .taskBoard #rightBoard .cardDetailsAttachments .cardFooter .fileChooser {
+        position: absolute;
+        z-index: 1;
+        opacity: 0; }
+      .taskBoard #rightBoard .cardDetailsAttachments .cardFooter .visibleForm {
+        position: absolute;
+        z-index: 0;
+        text-decoration: none;
+        outline: none; }
+        .taskBoard #rightBoard .cardDetailsAttachments .cardFooter .visibleForm .visibileInput {
+          border: none;
+          outline-color: none;
+          background-color: transparent;
+          box-shadow: none; }
+    .taskBoard #rightBoard .activityBody {
+      font-size: 13px; }
+      .taskBoard #rightBoard .activityBody .uploadNow {
+        background-color: white; }
+        .taskBoard #rightBoard .activityBody .uploadNow i {
+          font-size: 17px;
+          color: #ffc107; }
+      .taskBoard #rightBoard .activityBody .activityFirstHeading {
+        font-weight: 600; }
+      .taskBoard #rightBoard .activityBody .uploadTime {
+        font-size: 10px;
+        font-weight: 400; }
+      .taskBoard #rightBoard .activityBody ul li {
+        line-height: 10px; }
+      .taskBoard #rightBoard .activityBody .uploadPast i {
+        font-size: 17px;
+        color: #28BEBD; }
+  .taskBoard .bottomBorder {
+    border-bottom: 1px solid rgba(215, 225, 237, 0.8); }
+
+footer {
+  position: fixed; }
+
+/*# sourceMappingURL=taskBoard.css.map */

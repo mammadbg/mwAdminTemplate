@@ -1,0 +1,184 @@
+
+.sidebar:hover{
+  li{
+    span{
+      display: block;
+    
+    }
+   
+  }
+  .plusSign{
+    display: block;
+    font-size: $leftFontSize; 
+    color: $leftFirstFontColor; 
+    font-weight: $leftFontWeight;
+    font-family: $leftFontFamily;
+  }
+  // width: 240px;
+  overflow: visible;
+}
+.sidebar:hover .leftNavHeaders{
+  font-size: .6875em;  
+  display: flex;
+  line-height: 1.25em;  
+  height: 40px;
+  width: 100%;
+  display: block;
+}
+
+// content of left Side Bar
+.sidebar{
+  position: relative;
+  // height: 100%;
+  width: 48px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $leftBodyColor ;
+  overflow: hidden;
+  // transition: 0.5s;
+  // padding-top: 60px;
+
+  .leftNavHeaders{
+    height: 0px;
+    width: 0px;
+    line-height: 0px;
+    font-size: 0;
+    color: #91a6bb;
+    opacity: .5;
+    margin: 0;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-sizing: border-box;
+    visibility: none;
+
+    // display: block;
+ 
+  }
+
+  li{
+    span{
+      display: none;
+    
+    }
+   
+  }
+
+
+  .plusSign {
+    display: none;
+    }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: $leftFontSize;
+    color: $leftFirstFontColor;
+    font-weight: $leftFontWeight;
+    font-family: $leftFontFamily;
+    background-color: none;
+    display: block;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: #f1f1f1;
+  }
+
+  li:hover .plusSign{
+    color: white;
+  }
+  li:hover{
+    background-color: $leftTopColor;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  .logoIcon{
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 8px;
+  }
+
+  .logoIcon img{
+    width: 25px;
+    height: 25px;
+  }
+    
+  .brandName{
+    font-family: Poppins, sans-serif;
+    line-height: 19px;
+    margin-top: 24px;
+    margin-left: -40px;
+    font-size: 1.0625em;
+    padding: 5px 0 0 46px;
+    letter-spacing: .07em;
+    font-weight: 300;
+    color: #fff;
+  
+  }
+
+  .leftSidebarHeader{
+    background-color: $leftTopColor;
+  }
+  
+  .leftToggleButton{
+    font-size: 26px;
+    margin-top: 20px;
+    // -webkit-transform: rotate(180deg);
+  }
+
+  ul{
+    // position: absolute;
+    list-style-type: none;
+    margin-left:0;
+    padding: 0;
+  }
+  ul li{
+    position: relative;
+    margin-left:0;
+    padding-left: 0;
+  }
+
+  .dropdown-menu{
+    background-color: $leftBodyColor;
+    width: 100%;
+  }
+
+  
+}
+
+
+
+// #main {
+//   transition: margin-left .5s;
+//   padding: 16px;
+// }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  // .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+
+
+//accordion dropdown
+
+
+
+
+//scrollbar
+  ::-webkit-scrollbar{
+    width:3px;
+  }
+  ::-webkit-scrollbar-track{
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: black;
+  }

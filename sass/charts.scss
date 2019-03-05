@@ -1,0 +1,87 @@
+.c3charts{
+    padding-left: 50px;
+    // margin-right: 50px;
+    // padding-top: -100px;
+}
+.firstRowCards{
+    margin-top: -50px;
+    height: 480px;
+}
+.c3heading{
+    font-size: 1.5em;
+    color: white;
+    font-family: Poppins,sans-serif;
+    font-weight: 400;
+}
+.c3header{
+    background-color: $navbarBlue;
+    height: 190px;
+    padding: 0 20px;
+    margin: 0 0;
+
+    p{
+        color: rgba(255,255,255,.5);
+        font-weight: 400;
+    }
+    a{
+        color: rgba(255,255,255,.5);
+        font-weight: 400;
+        size: 12px;
+        font-family: "Open Sans",sans-serif;
+    }
+    a:hover{
+        color:white;
+    }
+    a:active, a:hover, a:link, a:visited {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    .chartBigHead i{
+        font-size: 18px;
+    }
+    
+}
+.chartBigHead{
+    font-size: 1.25em;
+    margin: 0;
+    font-weight: 400;
+    color: #516073;
+}
+.chartSmallHeading{
+    font-family : "Open Sans", sans-serif;
+    font-size : 12px;
+    font-weight : 600;
+    line-height : 20px;
+    text-decoration : none solid rgb(128, 147, 175);
+    word-spacing : 0px;
+    color :  #8093AF; 
+    // color: red;
+}
+
+.chartHeadFirstRow {
+i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    color: red;
+}
+}
+
+.chartCardBody{
+    box-sizing: border-box;
+}
+
+#gaugeC3{
+    width: 100%;
+    height: 100%;
+}
+#pieC3{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--My css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- c3 charts css -->
+    <link href="c3/c3.css" rel="stylesheet">
+    <link rel="stylesheet" href="c3/">
+    <!-- chart.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <title>Chart.js Charts</title>
+</head>
+
+<body>
+
+    <!-- chart.js charts body -->
+    <section class="chartjs">
+        <div class="container-fluid">
+            <!-- blue navbar on c3 body -->
+            <div class="row">
+
+                <div class="col-md-12 c3header">
+                    <h2 class="row c3heading pt-4 pl-2">Chart.js</h2>
+                    <div class="row pl-2">
+                        <a href="index.html">Dashboard</a>
+                        <p class="mx-1"> > </p>
+                        <a href="#">Charts</a>
+                        <p class="mx-1">></p>
+                        <a href="#">Chart.js</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- first two charts -->
+            <div class="row doubleChartbox justify-content-around">
+
+                <!-- CHART 1  -->
+                <div class="col-xs-12 col-sm-6 col-md-5 bg-light mx-1 bg-light firstRowCards">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Line Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                    <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                </div>
+                                <div class="col-1">
+                                    <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="myChartJs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+
+                <!-- CHART 2 -->
+                <div class="col-xs-12 col-sm-6 col-md-5 border mx-1 bg-light firstRowCards">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Bar Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                                        <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="barChartJs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+
+            </div>
+
+            <!-- second two charts -->
+            <div class="row doubleChartbox mx-2 justify-content-around  mt-5">
+                <!-- CHART 3 -->
+                <div class="col-xs-12 col-sm-6 col-md-5 bg-light mx-2 bg-light">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col  mx-2">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Radar Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                                            <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                                        </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="radarChartJs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+
+                <!-- CHART 4 -->
+                <div class="col-xs-12 col-sm-6 col-md-5 bg-light mx-2 bg-light">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Polar Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                                        <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                                    </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="polarChartJs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+            </div>
+
+            <!-- third two charts -->
+            <div class="row doubleChartbox mx-2 justify-content-around  mt-5 mb-5">
+                <!-- CHART 5 -->
+                <div class="col-xs-12 col-sm-6 col-md-5 bg-light mx-2 bg-light">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Pie Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                                            <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                                        </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="pieChartJs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+
+                <!-- CHART 6 -->
+                <div class="col-xs-12 col-sm-6 col-md-5 bg-light mx-2 bg-light">
+
+                    <!-- header of chart card -->
+                    <div class="row chartCardHead">
+                        <div class="col">
+                            <!-- Big header -->
+                            <div class="row d-flex chartHeadFirstRow">
+                                <p class="col-3 chartBigHead pt-3">Doughnut Chart</p>
+                                <div class="col-6"></div>
+                                <!-- <div class="col-2">
+                                                            <i class="fas fa-sync-alt text-secondary" style="font-size:18px"></i>
+                                                        </div>
+                                                        <div class="col-1">
+                                                            <i class=" fas fa-ellipsis-v text-secondary col-1"></i>
+                                                        </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Body of Chart card -->
+                    <div class="row chartCardBody">
+                        <div class="col-md-12 box">
+                            <canvas id="doughnutChartjs"></canvas>
+                        </div>
+                    </div>
+
+
+                    <!-- card closing -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <div class="allScripts">
+        <script src="js/scripts.js"></script>
+        <script src="js/charts.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <!-- Load d3.js and c3.js -->
+        <script src="c3/to/d3.v5.min.js" charset="utf-8"></script>
+        <script src="c3/c3.min.js"></script>
+        <!-- chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

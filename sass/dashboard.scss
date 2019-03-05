@@ -1,0 +1,51 @@
+.dashboardBody{
+    // position: relative;
+    margin-left: 48px;
+    color: #758396;
+     font-family: "Open Sans",sans-serif;
+     .beard{
+         border: 0.5px solid black;
+     }
+     .firstRowCol{
+         position: relative;
+         height: 280px;
+         #oRderLayout1{
+             position: absolute;
+             top:30px;
+             left:0px;
+             z-index: 4;
+             perspective: 100px;
+             background-color: yellow;
+         }
+         #oRderLayout2{
+            position: absolute;
+             z-index: 3;
+             top:20px;
+             left:10px;
+             perspective: 80px;
+             background-color: red;
+         }
+         #oRderLayout3{
+            position: absolute;
+             z-index: 2;
+             top:10px;
+             left:20px;
+             background-color: blue;
+             perspective: 60px;
+
+         }
+         #oRderLayout4{
+             z-index: 1;
+             position: absolute;
+             top:0px;
+             left:30px;
+             background-color: green;
+             perspective: 40px;
+
+            }
+        .orderBox{
+            height: 222px;
+            background-color: white;
+        }
+     }
+}

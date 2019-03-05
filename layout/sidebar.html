@@ -1,0 +1,745 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--My css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <!-- Left side main black Sidebar section -->
+    <section>
+        <div id="mySidebar" class="sidebar accordion" onmouseover="bigNav(this)" onmouseout="smallNav(this)">
+
+            <div class="leftSidebarHeader d-flex d-inline">
+                <div class="logoIcon"><img src="img/logo-icon.png" alt=""></div>
+                <p class="brandName mx-10 p-10">MaterialWrap</p>
+                <a href="javasctipt:void(0)" class="sideBarToggleButton" onclick="openCloseSideBar()"
+                    id="sideBarToggleButton"><i class="fas fa-angle-double-right leftToggleButton"></i></a>
+            </div>
+
+            <ul>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- first  heading -->
+                <li class="leftNavHeaders">NAVIGATION</li>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- dashboard -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="index.html">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Dashboard</span>
+                    </a>
+                </li>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- Page layouts -->
+
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#" data-toggle="collapse"
+                        data-target="#pglayoutSubs" aria-expanded="false" aria-controls="pglayoutSubs">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Page Layouts</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of page layouts -->
+                <div id="pglayoutSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <!-- Full width -->
+                            <li id="accordionExampleF">
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#fullWidthSubs" aria-expanded="false" aria-controls="fullWidthSubs">
+                                    <span class="nav-text pl-3">Full Width Layouts</span>
+                                    <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                                </a>
+                            </li>
+
+                            <!-- dropdown of full width -->
+                            <div id="fullWidthSubs" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#fullWidth">
+                                <ul>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Full Width V1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class=" nav-text pl-3">Full Width V2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class=" nav-text pl-3">Full Width V3</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- -------------------------------- -->
+                            <!-- Boxed Layouts -->
+                            <li>
+                                <a class="d-flex justify-content-start pl-3" href="#" data-toggle="collapse"
+                                    data-target="#boxedSubs" aria-expanded="false" aria-controls="boxedSubs">
+                                    <span class="nav-text pl-3">Boxed Layouts</span>
+                                    <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                                </a>
+                            </li>
+
+                            <!-- dropdown of boxed layouts -->
+                            <div id="boxedSubs" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#fullWidth">
+                                <ul>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Boxed Layouts V1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Boxed Layouts V1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Boxed Layouts V1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- -------------------------------- -->
+                            <!-- Left side Layouts -->
+                            <li>
+                                <a class="d-flex justify-content-start pl-3" href="#" data-toggle="collapse"
+                                    data-target="#leftSubs" aria-expanded="false" aria-controls="leftSubs">
+                                    <span class="nav-text pl-3">Left side Layouts</span>
+                                    <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                                </a>
+                            </li>
+
+                            <!-- dropdown of boxed layouts -->
+                            <div id="leftSubs" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#fullWidth">
+                                <ul>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Left side Nav V1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Left side Nav V2</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- -------------------------------- -->
+                            <!-- Right side Layouts -->
+                            <li>
+                                <a class="d-flex justify-content-start pl-3" href="#" data-toggle="collapse"
+                                    data-target="#rightSubs" aria-expanded="false" aria-controls="rightSubs">
+                                    <span class="nav-text pl-3">Right side Layouts</span>
+                                    <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                                </a>
+                            </li>
+
+                            <!-- dropdown of boxed layouts -->
+                            <div id="rightSubs" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#fullWidth">
+                                <ul>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Right side Nav V1</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="d-flex justify-content-start pl-5 fullWidth" href="#"
+                                            data-toggle="collapse" data-target="#" aria-expanded="false">
+                                            <span class="nav-text pl-3">Right side Nav V1</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- -------------------------------- -->
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- Cards -->
+                <li data-toggle="collapse" data-target="#cardsSubs" aria-expanded="false" aria-controls="cardsSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th-large align-self-center"></i>
+                        <span class="nav-text pl-3">Cards</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of cards -->
+                <div id="cardsSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class="nav-text pl-3">Card Templates</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class=" nav-text pl-3">Card Demos</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- Charts -->
+                <li data-toggle="collapse" data-target="#chartsSubs" aria-expanded="false" aria-controls="chartsSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-chart-bar align-self-center"></i>
+                        <span class="nav-text pl-3">Charts</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Charts -->
+                <div id="chartsSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <div class="card-body">
+                        <ul>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class="nav-text pl-3">C3 Charts</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class=" nav-text pl-3">Chartist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class=" nav-text pl-3">Chartjs</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                    data-target="#" aria-expanded="false">
+                                    <span class=" nav-text pl-3">MorrisJs Charts</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- second  heading -->
+                <li class="leftNavHeaders">APP VIEWS</li>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Ecommerce -->
+                <li data-toggle="collapse" data-target="#ecomSubs" aria-expanded="false" aria-controls="ecomSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Ecommerce</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Ecommerce -->
+                <div id="ecomSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class=" nav-text pl-3">Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class=" nav-text pl-3">Customers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class=" nav-text pl-3">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- File Manager -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-folder align-self-center"></i>
+                        <span class="nav-text pl-3">File Manager</span>
+                    </a>
+                </li>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Taskboard -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-columns align-self-center"></i>
+                        <span class="nav-text pl-3">Taskboard</span>
+                    </a>
+                </li>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Notes -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-lightbulb align-self-center"></i>
+                        <span class="nav-text pl-3">Notes</span>
+                    </a>
+                </li>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- Mail -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-envelope align-self-center"></i>
+                        <span class="nav-text pl-3">Mail</span>
+                    </a>
+                </li>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- third heading -->
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <li class="leftNavHeaders">PAGE VIEWS</li>
+                <!-- Profile -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-user-alt align-self-center"></i>
+                        <span class="nav-text pl-3">Profile</span>
+                    </a>
+                </li>
+                <!-- Invoice  -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-dollar-sign align-self-center"></i>
+                        <span class="nav-text pl-3">Invoice</span>
+                    </a>
+                </li>
+                <!-- TimeLine -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-clock align-self-center"></i>
+                        <span class="nav-text pl-3">Timeline</span>
+                    </a>
+                </li>
+                <!-- Locations -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-map-marker align-self-center"></i>
+                        <span class="nav-text pl-3">Locations</span>
+                    </a>
+                </li>
+                <!-- Pricing tables -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-envelope align-self-center"></i>
+                        <span class="nav-text pl-3">Pricing tables </span>
+                    </a>
+                </li>
+                <!-- Gallery -->
+                <li>
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-lightbulb align-self-center"></i>
+                        <span class="nav-text pl-3">Gallery</span>
+                    </a>
+                </li>
+
+                <!-- Authentication -->
+                <li data-toggle="collapse" data-target="#autSubs" aria-expanded="false" aria-controls="autSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Authentication</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Authentication -->
+                <div id="autSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Login & Register</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class=" nav-text pl-3">Lock Screen</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- fourth heading -->
+                <li class="leftNavHeaders">Design Elements</li>
+
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- User Interface -->
+                <li data-toggle="collapse" data-target="#uiSubs" aria-expanded="false" aria-controls="uiSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">User Interface</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of user interface -->
+                <div id="uiSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Alerts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Animations</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Avatars</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Buttons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Colors</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Grid System</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Icons</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">List</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Preloaders</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">BAdges & Labals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Typography</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Components -->
+                <li data-toggle="collapse" data-target="#componentSubs" aria-expanded="false"
+                    aria-controls="componentSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Components</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Authentication -->
+                <div id="componentSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Notifications & Dialogs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Toolbars</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Collapsible</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Chips</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Drawers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Dropdowns</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Modals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Sliders & Progressbar</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Scrollable</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Tabs & Pills</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Tooltips & Popovers</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Forms -->
+                <li data-toggle="collapse" data-target="#formSubs" aria-expanded="false" aria-controls="formSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Forms</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Forms -->
+                <div id="formSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Form Elements</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Form Components</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Form Layouts</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Form Validation</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Form Wizard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- Theme Settings -->
+                <li data-toggle="collapse" data-target="#themeSubs" aria-expanded="false" aria-controls="themeSubs">
+                    <a class="d-flex justify-content-start pl-3" href="#">
+                        <i class="fas fa-th align-self-center"></i>
+                        <span class="nav-text pl-3">Theme Settings</span>
+                        <i class="fas fa-plus plusSign ml-auto mr-1"></i>
+                    </a>
+                </li>
+
+                <!-- dropdown of Authentication -->
+                <div id="themeSubs" class="collapse show accordion" aria-labelledby="headingOne"
+                    data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class="nav-text pl-3">Basic Tables</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="d-flex justify-content-start pl-3 fullWidth" href="#" data-toggle="collapse"
+                                data-target="#" aria-expanded="false">
+                                <span class=" nav-text pl-3">Data Tables</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------------------------------- -->
+                <!-- fourth heading -->
+                <li class="leftNavHeaders">Extras</li>
+                <!-- Profile -->
+                <li>
+                        <a class="d-flex justify-content-start pl-3" href="#">
+                            <i class="fas fa-user-alt align-self-center"></i>
+                            <span class="nav-text pl-3">Front-end</span>
+                        </a>
+                    </li>
+                    <!-- Invoice  -->
+                    <li>
+                        <a class="d-flex justify-content-start pl-3" href="#">
+                            <i class="fas fa-dollar-sign align-self-center"></i>
+                            <span class="nav-text pl-3">Menu Levels</span>
+                        </a>
+                    </li>
+                    <!-- TimeLine -->
+                    <li>
+                        <a class="d-flex justify-content-start pl-3" href="#">
+                            <i class="fas fa-clock align-self-center"></i>
+                            <span class="nav-text pl-3">Helper Classes</span>
+                        </a>
+                    </li>
+
+
+
+            </ul>
+
+
+        </div>
+    </section> <!-- Left side main black Sidebar section -->
+
+
+
+    <div class="allScripts">
+        <script src="js/scripts.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

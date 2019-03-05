@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--My css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+
+    <!-- main body of taskbar -->
+    <section class="taskBoard container-fluid">
+
+        <!-- task board underlay -->
+        <div class="row" id="taskboardUnderlay">
+
+            <!-- first Card -->
+            <div class="col-md-3">
+                <!-- ------------------------------------------------------- -->
+                <!-- header of first card main -->
+                <div class="row col-12 cardHeader cardBorder1 pt-2 pl-4 shadow">
+                    <span class="badge count">1</span>
+                    <h2>ToDo</h2>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- body of main card-->
+                <div class="row col-12 cardBody">
+                    <div class="col">
+                        <p class="cardBodyHeader m-0 p-0">Add ESLint to build process</p>
+                        <div class="row profileImages align-self-end m-0 p-0">
+                            <img src="img/profiles/11.jpg" class="rounded-circle border border-light rightOpenButton"
+                                id="rightOpenButton1" alt="">
+                            <img src="img/profiles/14.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- footer of the main card -->
+                <div class="row col-12 cardFooter">
+                    <div class="col-md-4 cardAttachment">
+                        <ul class="list-unstyled d-flex mt-3">
+                            <li class="cardAttachments d-flex mx-1">
+                                <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers px-1">0</p>
+                            </li>
+                            <li class="cardAttachments d-flex mx-1">
+                                <i class="fas fa-comment-alt singleAttachment"></i>
+                                <p class="attachNumbers  px-1">1</p>
+                            </li>
+                            <li class="cardAttachments d-flex align-self-center">
+                                <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers">2</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="cardNumber float-right pt-3">#41674</p>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- new new Ok card body -->
+                <div class="row mt-2 mb-1" id="okWindow2" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow align-items-center" id="okCardBody">
+                                <h6 id="okCardText2"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- new Ok card body -->
+                <div class="row mt-2 mb-1" id="okWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow align-items-center" id="okCardBody">
+                                <h6 id="okCardText"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- adding new card -->
+                <div class="row mt-2 " id="newCardWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="addCardBody">
+                                <input type="text" id="addCardInput" placeholder="Title" class="bottomBorder3">
+                                <button class="doneButton mx-1" id="doneButton"><i class="fas fa-check"></i></button>
+                                <button class="closeButton mx-1" id="closeButton"><i class="fas fa-times"></i></button>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- plus sign to add card -->
+                <div class="row col-12 addCard justify-content-center">
+                    <div class="addCardPLus  rounded-circle text-center align-items-center" id="addCard">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- empty space under cards -->
+                <div class="row" style="height:100px"></div>
+
+
+
+                <!-- end of first card -->
+            </div> <!-- first Card -->
+
+            <!-- second Card -->
+            <div class="col-md-3">
+                <!-- ------------------------------------------------------- -->
+                <!-- header of first card main -->
+                <div class="row col-12 cardHeader cardBorder2 pt-2 pl-4 shadow">
+                    <span class="badge2 count">1</span>
+                    <h2>In Progress</h2>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- body of main card-->
+                <div class="row col-12 cardBody">
+                    <div class="col">
+                        <p class="cardBodyHeader m-0 p-0">Job Board wireframes</p>
+                        <div class="row profileImages align-self-end m-0 p-0">
+                            <img src="img/profiles/03.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                            <img src="img/profiles/07.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                            <img src="img/profiles/05.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- footer of the main card -->
+                <div class="row col-12 cardFooter">
+                    <div class="col-md-4 cardAttachment">
+                        <ul class="list-unstyled d-flex mt-3">
+                            <li class="cardAttachments d-flex mx-1">
+                                <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers px-1">0</p>
+                            </li>
+                            <li class="cardAttachments d-flex mx-1">
+                                <i class="fas fa-comment-alt singleAttachment"></i>
+                                <p class="attachNumbers  px-1">1</p>
+                            </li>
+                            <li class="cardAttachments d-flex align-self-center">
+                                <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers">2</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="cardNumber float-right pt-3">#41674</p>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- new new Ok card body -->
+                <div class="row mt-2 mb-1" id="okWindow2" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="okCardBody">
+                                <h6 id="okCardText2"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- new Ok card body -->
+                <div class="row mt-2 mb-3" id="okWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="okCardBody">
+                                <h6 id="okCardText"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- adding new card -->
+                <div class="row mt-2 " id="newCardWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="addCardBody">
+                                <input type="text" id="addCardInput" placeholder="Title" class="bottomBorder3">
+                                <button class="doneButton mx-1" id="doneButton"><i class="fas fa-check"></i></button>
+                                <button class="closeButton mx-1" id="closeButton"><i class="fas fa-times"></i></button>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- plus sign to add card -->
+                <div class="row col-12 addCard justify-content-center">
+                    <div class="addCardPLus  rounded-circle text-center align-items-center" id="addCard">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- empty space under cards -->
+                <div class="row" style="height:100px"></div>
+
+
+
+                <!-- end of first card -->
+            </div> <!-- second Card -->
+
+            <!-- third Card -->
+            <div class="col-md-3">
+                <!-- ------------------------------------------------------- -->
+                <!-- header of first card main -->
+                <div class="row col-12 cardHeader cardBorder3 pt-2 pl-4 shadow">
+                    <span class="badge3 count">1</span>
+                    <h2>Approved</h2>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- body of main card-->
+                <div class="row col-12 cardBody">
+                    <div class="col">
+                        <p class="cardBodyHeader m-0 p-0">Dashboard Mockups</p>
+                        <div class="row profileImages align-self-end m-0 p-0">
+                            <img src="img/profiles/12.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                            <img src="img/profiles/15.jpg" class="rounded-circle border border-light rightOpenButton"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- footer of the main card -->
+                <div class="row col-12 cardFooter">
+                    <div class="col-md-4 cardAttachment">
+                        <ul class="list-unstyled d-flex  mt-3">
+                            <li class="cardAttachments d-flex mx-1">
+                                <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers px-1">0</p>
+                            </li>
+                            <li class="cardAttachments d-flex mx-1">
+                                <i class="fas fa-comment-alt singleAttachment"></i>
+                                <p class="attachNumbers  px-1">1</p>
+                            </li>
+                            <li class="cardAttachments d-flex align-self-center">
+                                <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                <p class="attachNumbers">2</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p class="cardNumber float-right pt-3">#41674</p>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+
+                <!-- new new Ok card body -->
+                <div class="row mt-2 mb-3" id="okWindow2" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="okCardBody">
+                                <h6 id="okCardText2"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+
+                <!-- new Ok card body -->
+                <div class="row mt-2 mb-3" id="okWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="okCardBody">
+                                <h6 id="okCardText"></h6>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- adding new card -->
+                <div class="row mt-2 " id="newCardWindow" style="height:0px; visibility:hidden">
+                    <div class="col-11">
+                        <div class="row" style="height:70px">
+                            <!-- ------------------------------------------------------- -->
+                            <!-- body of Adding card -->
+                            <div class="col-12 bg-light shadow" id="addCardBody">
+                                <input type="text" id="addCardInput" placeholder="Title" class="bottomBorder3">
+                                <button class="doneButton mx-1" id="doneButton"><i class="fas fa-check"></i></button>
+                                <button class="closeButton mx-1" id="closeButton"><i class="fas fa-times"></i></button>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                            <!-- footer of new card -->
+                            <div class="col-md-12 cardAttachment newCardFooter shadow">
+                                <ul class="list-unstyled d-flex mt-3">
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <ion-icon name="attach" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers px-1">0</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex mx-1">
+                                        <i class="fas fa-comment-alt singleAttachment"></i>
+                                        <p class="attachNumbers  px-1">1</p>
+                                    </li>
+                                    <li class="cardAttachments d-flex align-self-center">
+                                        <ion-icon name="copy" class="singleAttachment"></ion-icon>
+                                        <p class="attachNumbers">2</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- ------------------------------------------------------- -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- plus sign to add card -->
+                <div class="row col-12 addCard justify-content-center">
+                    <div class="addCardPLus  rounded-circle text-center align-items-center" id="addCard">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <!-- ------------------------------------------------------- -->
+                <!-- -------------------------------------------------------------------------------------------------------------- -->
+                <!-- empty space under cards -->
+                <div class="row" style="height:100px"></div>
+
+
+
+                <!-- end of first card -->
+            </div> <!-- third Card -->
+
+            <!-- fourth Card -->
+            <div class="col-md-3">
+                <div class="row col-12 cardHeader pt-2 pl-4 shadow fourthHead" id="fourthHeadx">
+                    <span class="badge2 count">0</span>
+                    <h2>Add a list...</h2>
+                </div>
+                <div class="row col-12" id="lastCardBody">
+                    <p class="labelForColors mt-4 mb-1">List Color</p>
+                    <ul class="swatches d-flex flex-wrap    pl-0">
+
+                        <li class="md-bg-red-500">
+                            <input type="radio" value="md-bg-red-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-pink-500">
+                            <input type="radio" value="md-bg-pink-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-purple-500">
+                            <input type="radio" value="md-bg-purple-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-deep-purple-500">
+                            <input type="radio" value="md-bg-deep-purple-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-indigo-500">
+                            <input type="radio" value="md-bg-indigo-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-cyan-500">
+                            <input type="radio" value="md-bg-cyan-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-teal-500">
+                            <input type="radio" value="md-bg-teal-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-green-500">
+                            <input type="radio" value="md-bg-green-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                        <li class="md-bg-lime-500">
+                            <input type="radio" value="md-bg-lime-500" name="swatches">
+                            <i class="dark"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row col-12" id="lastCardInput">
+                    <input type="text" placeholder="Last Title" class="lastInput mb-3">
+                    <button class="doneButton mx-1 mt-5" id="lastDoneButton"><i class="fas fa-check"></i></button>
+                    <button class="closeButton mx-1 mt-5" id="lastCloseButton"><i class="fas fa-times"></i></button>
+                </div>
+            </div> <!-- fourth Card -->
+        </div> <!-- task board underlay -->
+
+
+
+        <!-- Taskboard overlay RIGHT SIDE profiles -->
+        <div class="row  taskBoardOverlay" id="taskBoardOverlay">
+            <!-- left side blur -->
+            <div class="col-xs-1 col-md-8 taskRightBlur" style="background: rgba(0,0,0,.1);"></div>
+            <!-- --------------------- -->
+
+            <!-- right side content -->
+            <div class="col-xs-11 col-md-4 taskRight " id="rightBoard">
+
+                <!-- header for choosing sections -->
+                <div class="row rightHeader cardHeader">
+                    <div class="col-xs-6 col-md-6 rightHeadBottom" id="taskBoardCardDetailsButton">Card Details</div>
+                    <div class="col-xs-6 col-md-6 rightHeadBottom" id="taskBoardActivityButton">Activity</div>
+                </div> <!-- header for choosing sections -->
+
+
+
+                <!-- body of card details -->
+                <div class="row rightBody " id="taskBoardCardDetailsBody">
+                    <div class="col-12 mt-3">
+
+                        <!-- card details body Heading -->
+                        <div class="row m-0 cardDetailsBodyHeading mb-2" style="border:0.01px solid gray">
+                            <div class="col-7 profileImages d-flex">
+                                <img src="img/profiles/11.jpg" class="rounded-circle border border-light " alt="">
+                                <p class="cardDetailsProfileName pt-2 ml-3 mb-0 mt-2 ">Created by Kristine Wilson</p>
+                            </div>
+                            <div class="col-5 calendar ">
+                                <div class="calendarPreview d-flex d-inline mt-2 bg-light">
+                                    <i class="fas fa-calendar-alt mt-2 ml-3 asd"></i>
+                                    <p class="calendarTime mb-0 mx-3 mt-2">asdasd</p>
+                                </div>
+                            </div>
+                        </div> <!-- card details body Heading -->
+
+                        <!-- card details approved section -->
+                        <div class="row  mx-0 mt-3" style="border:1px solid #EEF5F9; border-top: 4px solid #FF5722;">
+                            <div class="col-6" style="border:1px solid #EEF5F9">
+                                <p class="approvedTaskCard">Approved</p>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <p class="numberOfTaskCard mx-2">#21640</p>
+                                <i class="fas fa-ellipsis-v mx-2 mt-1 taskCardDots"></i>
+                            </div>
+
+
+                        </div> <!-- card details approved section -->
+
+                        <!-- middle body of card details -->
+                        <div class="row m-0 justify-items-between middleBody">
+                            <div class="col-12 cardTitle my-3">Card Title </div>
+                            <div class="col-12 cardSecondTitle my-2">
+                                <p class="dashedBorder d-inline-block"> Dashboard Mockups</p>
+                            </div>
+                            <div class="col-12 cardNotes my-4">
+                                <i class="fas fa-file"></i>
+                                Notes
+                            </div>
+                            <div class="col-12 cardText"><a class="dashedBorder2 d-inline-block">After the functional
+                                    mockups are approved the remainder of the site will be built.</a> </div>
+                            <div class="col-12 cardAssign mt-5">
+                                <i class="fas fa-user-friends"></i>
+                                Assign to</div>
+                            <div class="col-12 cardPics mb-4">
+                                <div class="row profileImages align-self-end m-0 p-0 d-flex d-inline">
+                                    <img src="img/profiles/12.jpg" class="rounded-circle border border-light" alt="">
+                                    <img src="img/profiles/15.jpg" class="rounded-circle border border-light" alt="">
+                                    <div class="cardPlusButton profileImages mt-3 ml-2 ">
+                                        <i class="fas fa-plus mt-2 ml-2"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- bottom body of card details   attachments-->
+                        <div class="row m-0 cardDetailsAttachments">
+                            <div class="col-12 heading mt-3 bg-light pt-3 grayBorder bottomBorder">
+                                Attachments
+                            </div>
+                            <div class="row m-0  col-12 middleBody d-flex d-inline">
+                                <div class="col-12 d-flex d-inline my-3">
+                                    <div class="cardDetailsAttachmentsImage"><i class="fas fa-image mt-2 ml-2"></i>
+                                    </div>
+                                    <div class="cardDetailsAttachmentFileType mx-2 mt-1">design-guidlines.pdf</div>
+                                </div>
+                                <div class="col-12 d-flex d-inline my-3 mb-3">
+                                    <div class="cardDetailsAttachmentsImage"><i class="fas fa-image  mt-2 ml-2"></i>
+                                    </div>
+                                    <div class="cardDetailsAttachmentFileType mx-2 mt-1">design-guidlines.pdf</div>
+                                </div>
+                            </div>
+                            <div class="col-12 m-0 cardFooter">
+                                <div class="form-group">
+                                    <input type="file" placeholder="Attach a file..." class="fileChooser col-12">
+                                    <div class="input-group visibleForm col-11 bottomBorder">
+                                        <input readonly class="form-control visibileInput "
+                                            placeholder="Attach a file...">
+                                        <button class="mx-2">
+                                            <i class="fas fa-paperclip"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div> <!-- body of card details -->
+
+                <!-- body of activity -->
+                <div class="row activityBody beard" id="taskBoardActivityBody">
+
+                    <!-- first part of activity card -->
+                    <div class="row  col-12 uploadNow m-0 mb-1">
+                        <!-- activity heading of first row -->
+                        <div class="col-1 activityHeading  profileImages mr-0 pr-0">
+                            <img src="img/profiles/02.jpg" class="rounded-circle border border-light mr-0 pr-0" alt="">
+                        </div>
+                        <div class="col-11 activityBody">
+                            <div class="row activityFirstHeading">
+                                <p class="col-12 pl-0 pt-2 mb-1"> You uploaded an item </p>
+                            </div>
+                            <div class="row uploadTime">
+                                <p>Mon 7:11 AM</p>
+                            </div>
+                        </div> <!-- activity heading of first row -->
+
+                        <!-- activity js files -->
+                        <div class="col-1"></div>
+                        <div class="col-11 activityBody beard pl-0 ml-0">
+                            <ul class="pl-0">
+                                <li class="d-flex d-inline"><i class="fab fa-js-square"></i>
+                                    <p class="activityCardAttachmentText mb-1 ml-2">sidebar-overlay.js</p>
+                                </li>
+                                <li class="d-flex d-inline"><i class="fab fa-js-square"></i>
+                                    <p class="activityCardAttachmentText mb-1 ml-2">bundle.min.js</p>
+                                </li>
+                                <li class="d-flex d-inline"><i class="fab fa-js-square"></i>
+                                    <p class="activityCardAttachmentText ml-2">oflline.js</p>
+                                </li>
+                            </ul>
+                        </div> <!-- activity js files -->
+
+                    </div> <!-- first part of activity card -->
+
+                    <!-- second part of activity card -->
+                    <div class="row  col-12 uploadPast m-0 mb-1 mt-3">
+
+                        <!-- activity heading of first row -->
+                        <div class="col-1 activityHeading  profileImages mr-0 pr-0">
+                            <img src="img/profiles/02.jpg" class="rounded-circle border border-light mr-0 pr-0" alt="">
+                        </div>
+                        <div class="col-11 activityBody">
+                            <div class="row activityFirstHeading">
+                                <p class="col-12 pl-0 pt-2 mb-1"> You uploaded 15 item </p>
+                            </div>
+                            <div class="row uploadTime">
+                                <p>Mon 7:11 AM</p>
+                            </div>
+                        </div> <!-- activity heading of first row -->
+
+                        <!-- activity html files -->
+                        <div class="col-1"></div>
+                        <div class="col-11 activityBody beard pl-0 ml-0">
+                            <ul class="pl-0">
+                                <li class="d-flex d-inline bottomBorder"><i class="fab fa-html5"></i>
+                                    <p class="activityCardAttachmentText ml-2 mb-2">oflline.js</p>
+                                </li>
+                                <li class="d-flex d-inline bottomBorder"><i class="fab fa-html5"></i>
+                                    <p class="activityCardAttachmentText ml-2 mb-2">oflline.js</p>
+                                </li>
+                                <li class="d-flex d-inline bottomBorder"><i class="fab fa-html5"></i>
+                                    <p class="activityCardAttachmentText ml-2 mb-1">oflline.js</p>
+                                </li>
+                                <li class="d-flex d-inline bottomBorder"><i class="fab fa-html5"></i>
+                                    <p class="activityCardAttachmentText ml-2 mb-1">oflline.js</p>
+                                </li>
+                                <li class="d-flex d-inline bottomBorder"><i class="fab fa-html5"></i>
+                                    <p class="activityCardAttachmentText ml-2">oflline.js</p>
+                                </li>
+                            </ul>
+                        </div> <!-- activity html files -->
+
+                    </div> <!-- second part of activity card -->
+
+
+                </div> <!-- body of activity -->
+
+            </div> <!-- right side content-->
+
+        </div> <!-- Taskboard overlay RIGHT SIDE profiles -->
+
+    </section>
+
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <!-- Footer in all pages-->
+    <footer class="footer-content container-fluid mt-0 float-left pl-5 ml-0 ">
+
+
+        <!-- Footer Links -->
+        <div class=" text-center text-md-left  pl-5 mt-1">
+
+            <!-- Footer row -->
+            <div class="row mt-1">
+
+                <!-- Footer first column -->
+                <div class="col-xs-12 col-sm-6 col-lg-6 col-md-6 mx-auto pt-5 pl-0">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase footerContentHeader pl-0">Want to Work with Us?</h6>
+                    <!-- <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;"> -->
+                    <p class="workWithUSText pt-2 pl-0">Paleo flexitarian bushwick letterpress, ea migas yr
+                        adipisicing.
+                        Man
+                        bun tacos tumblr kombucha,
+                        yuccie banjo affogato dolore gentrify retro chartreuse. Anim austin tempor ethical, sapiente
+                        food truck fanny pack farm-to-table. Culpa keytar esse tilde hoodie, art party nostrud
+                        messenger
+                        bag authentic helvetica kinfolk cred eu affogato forage.</p>
+
+                </div>
+                <!-- Footer  column -->
+
+                <!-- Footer second column -->
+                <div class="col-xs-12 col-sm-2 col-lg-2 col-md-6 mx-auto">
+
+                    <!-- Links -->
+                    <h6 class=" pt-5 footerContentHeader">Company</h6>
+                    <!-- <hr class="text-secondary mt-0 d-inline-block mx-auto" style="width: 60px;"> -->
+                    <p> <a class="companyItems" href="#!">About Us</a> </p>
+                    <p> <a class="companyItems" href="#!">Careers</a> </p>
+                    <p> <a class="companyItems" href="#!">Privacy Ploicy</a> </p>
+                    <p> <a class="companyItems" href="#!">Contact Us</a> </p>
+
+                </div>
+                <!-- Footer column -->
+
+                <!-- Footer  third column -->
+                <div class="col-xs-12 col-sm-4 col-lg-4 col-md-6 mx-auto mb-4 pt-5">
+                    <div class="row">
+                        <h6 class="text-uppercase footerContentHeader">Email Newsletters</h6>
+                    </div>
+                    <div class="row">
+                        <p class="workWithUSText">Sign up for new MaterialWrap content, updates, and offers.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <input type="email" class="form-control" id="footerEmail"
+                                placeholder="Enter your email address...">
+
+                        </div>
+                        <div class="col-4">
+                            <button class="btn  rounded-circle ml-4 emailButton mt-2" id="bapp"><i
+                                    class="fas fa-location-arrow"></i></button>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- Footer column -->
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- footer border -->
+        <div class="row container-fluid pt-3 pb-3">
+            <div class="col-12 footerBorder"></div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="row footer-copyright ml-5 pb-2">© Copyright 2019 MaterialWrap - All Rights Reserved: </div>
+        <!-- Copyright -->
+
+        <!-- Footer -->
+    </footer>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <div class="allScripts">
+        <script src="js/scripts.js"></script>
+        <script src="js/taskboard.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+            integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+            crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+            integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+            crossorigin="anonymous"></script>
+        <!-- ion Icons -->
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+    </div>
+</body>
+
+</html>

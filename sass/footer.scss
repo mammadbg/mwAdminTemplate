@@ -1,0 +1,96 @@
+footer{
+    background-color: $navbarBlue;
+    // height: 280px;
+    
+
+    .emailButton{
+        width: 40px;
+        height: 40px;
+        // border-radius: 100px;
+        background-color: white;
+        font-size: .95em;
+        transform: rotate(45deg);
+        color: gray;
+    }
+    .emailButton:hover{
+        transform: rotate(405deg);
+        transition: all .5s ease-in-out;
+    }
+
+    .footerContentHeader{
+        font-family: Poppins, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: white;
+        text-decoration: none;
+    }
+    .workWithUSText{
+        float: left;
+        line-height: 1.9em; 
+        outline: 0;
+    //     // margin-block-start: 1em;
+    // margin-block-end: 1em;
+    // margin-inline-start: 0px;
+    // margin-inline-end: 0px;
+    font-size: .8125em;
+    color: white;
+    }
+
+    .companyItems{
+        color: rgba(255,255,255,.5);
+        text-decoration: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        line-height: 6px;
+        font-weight: 400;
+    }
+    .companyItems:hover{
+        color: white;
+    }
+    #footerEmail{
+        background-color: #53CBCA;
+        // color: white;
+    }
+    #footerEmail::placeholder{
+        color: #fff;
+        margin: -5px 0 0;
+        padding: 10px 20px;
+        height: 45px;
+        transition: all 150ms ease-in-out;
+        border: none;
+    }
+    .footer-copyright{
+        font-family: "Open Sans", sans-serif;
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 25px;
+        color: rgba(255,255,255,.6);
+    }
+    
+    input{
+        background-color: rgba(255,255,255,.2);
+        border-color: none;
+        outline:none;
+        height: 45px;
+        border-radius: 10%;
+        margin: 13px -14px;
+        padding: 10px 20px;
+        border-radius: 3px;
+    }
+
+    .footerBorder{
+        background-color:  rgba(255,255,255,.2);
+        height: 1px;
+    }
+
+
+    // task board Profiles
+    .taskRightBlur{
+        background-color: rgba(0, 0, 0, .7);
+    }
+}
+
+
+    
+    

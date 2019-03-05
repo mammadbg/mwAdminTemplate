@@ -1,0 +1,119 @@
+$firstNavFamily:"Open Sans", sans-serif;
+$firstNavWeight:400;
+$firstNavFontSize:14px;
+$firstNavLineHeight:48px;
+$firstNavFontColor: #688696;
+$firstNavHoverFontColor: #516073;
+
+
+
+
+.firstNav{
+    // padding-left:48px;
+
+    a{
+        font-family: $firstNavFamily;
+        color: $firstNavFontColor;
+        font-size: $firstNavFontSize;
+        line-height: 38px;
+        font-weight: $firstNavWeight;
+    }
+    
+    .firstNavLeft{
+        float: left;
+    }
+    
+    .firstNavRight{
+        float: right;
+    }
+    
+    .firstNavLeftSecond{
+        // width: 340px;
+        // height: 210px;
+        transition:all 10s ease-in;
+        -webkit-transform: rotate(0deg) scale(0.1);
+        transform: rotate(0deg) scale(1);
+    }
+    
+    .firstNavLeftSecond i{
+    font-size: 24px;
+    font-weight: 400;
+    }
+    .firstNavLeftSecond a{
+        float: left;
+        width: 90px;
+        height: 90px;
+    }
+    .firstNavLeftSecond a:hover{
+        background-color: #EC407A;
+    }
+
+    .firstNavRight{
+        font-size: $firstNavFontSize;
+        color:$firstNavFontColor;
+        line-height: $firstNavLineHeight;
+        font-weight: $firstNavWeight;
+    }
+
+    .megaDropdown{
+        width: 1000px;
+        height: 330px;
+    }
+    .navbarProfileImage{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    .flagIcons{
+        width: 20px;
+        height: 20px;
+    }
+    ul li i{
+        font-size: 24px;
+        line-height: 2em;
+        color: $firstNavFontColor;
+    }
+    .dropdown-item:hover{
+        background-color:#EC407A; 
+    }
+    .languageDropdown{
+        width: 200px;
+        height: 170px;
+    }
+    .profileDropdown{
+        width: 210px;
+        height: 200px;
+    }
+    .languageDropdown a{
+        font-size: 13px;
+
+    }
+
+}
+
+
+.bottomNav{
+    // padding-left: 48px;
+    background-color: $navbarBlue;
+    font: white;
+    
+    .bottomNavLogo{
+    font-family: Poppins, sans-serif;
+    font-Weight:200;
+    font-size: 24px;
+    Line-Height:0px;
+    Color:#ffffff
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
